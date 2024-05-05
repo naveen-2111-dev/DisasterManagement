@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "solc": "^0.8.25"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules. --base-path . -o . ./contracts/DisasterManagement.sol",
+    "deploy": "npx hardhat run scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.11.1",
+    "hardhat": "^2.22.2"
+  }
+}
